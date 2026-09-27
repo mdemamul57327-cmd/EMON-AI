@@ -1,0 +1,14 @@
+EMON AI APK তৈরি করার সহজ নিয়ম
+
+১) GitHub-এ একটি নতুন Repository বানান, নাম দিন EMON-AI।
+২) এই ZIP-এর ভেতরের সব ফাইল Repository-তে আপলোড করুন। ZIP ফাইলটি ভেতরে রেখে দেবেন না; ভেতরের ফোল্ডার/ফাইল আপলোড করবেন।
+৩) নিশ্চিত করুন যে .github/workflows/build-apk.yml ফাইলটি আছে।
+৪) GitHub-এর Actions ট্যাবে যান।
+৫) “Build EMON AI APK” workflow নির্বাচন করুন।
+৬) “Run workflow” চাপুন।
+৭) কাজ শেষ হলে সফল workflow-তে নিচের দিকে “Artifacts” থেকে “EMON-AI-debug-apk” ডাউনলোড করুন।
+৮) ZIP খুলে app-debug.apk ফোনে ইনস্টল করুন।
+
+নোট: এটি Debug APK। Android-এ ইনস্টলের সময় অজানা উৎস/অনুমতির বার্তা আসতে পারে।
+
+অ্যাপের বর্তমান বিশ্লেষণটি স্ক্রিনের দৃশ্যমান অংশের স্থানীয় visual heuristic ব্যবহার করে; এটি Quotex-এর private/live API ব্যবহার করে না এবং নিশ্চিত ফলের গ্যারান্টি দেয় না।
